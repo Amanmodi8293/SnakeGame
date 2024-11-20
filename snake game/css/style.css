@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    /* Home page background */
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.animation{
+    animation: color 3s infinite;
+}
+.bg{
+    background: url(../image/homebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gamebg-overbg {
+    background: url("../image/bg.webp");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#score {
+    font-size: 100px;
+    font-weight: bold;
+    position: absolute;
+    right: 300px;
+    top: 100px;
+}
+
+#highscore {
+    font-size: 100px;
+    font-weight: bold;
+    position: absolute;
+    right: 300px;
+    top: 200px;
+}
+
+#scoreBox {
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+#highscoreBox {
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.containerend1 {
+    text-align: center;
+    margin-top: 15%;
+    height: 10%;
+}
+
+.containerend2 {
+    text-align: center;
+    height: 10%;
+}
+
+.containerend3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 90%;
+    font-size: 100px;
+    color: #930029;
+}
+
+.containerend4 {
+    height: 25%;
+    margin: auto;
+    width: 50%;
+}
+
+#exit {
+    font-size: 101px;
+    height: 134px;
+    width: 100%;
+    margin: 20px;
+    border-radius: 100px;
+    background-color: dimgray;
+    box-shadow: 20px 20px 10px 0px rgb(84, 0, 0);
+}
+
+#exit:hover {
+    font-size: 90px;
+    height: 120px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+#exit:active {
+    height: 134px;
+    color: rgb(224, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+#playagain {
+    font-size: 101px;
+    height: 134px;
+    width: 100%;
+    margin: 20px;
+    border-radius: 100px;
+    background-color: dimgray;
+    box-shadow: 20px 20px 10px 0px rgb(84, 0, 0);
+}
+
+#playagain:hover {
+    font-size: 90px;
+    height: 120px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+#playagain:active {
+    height: 134px;
+    color: rgb(8, 167, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+
+#board {
+    background: url(../image/gamebg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(red, yellow); */
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+#home {
+    display: inline-block;
+    width: 90vmin;
+    height: 92vmin;
+    position:absolute;
+    top: 80px;
+    right: 1240px;
+}
+.box{
+    border: 2px solid black;
+    background: linear-gradient(#420b0b, #7b7e0e);
+    box-shadow: 10px 0px 100px 50px #c5360a, 10px 0px 100px 100px green;
+}
+
+#home button {
+    background-color: #350e0e;
+    color: #9cbd00;
+    border: 2px solid white;
+    padding: 30px 80px;
+    font-size: 80px;
+    border-radius: 100px;
+    box-shadow: 20px 20px 10px 0px rgb(84, 0, 0);
+
+}
+
+#home button:hover {
+    background-color: #350e0e;
+    color: #9cbd00;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 30px 80px;
+    box-shadow: 0px 0px 0px 0px rgb(84, 0, 0);
+    font-size: 80px;
+    border-radius: 100px;
+
+}
+
+#home button:active {
+    background-color: #550707;
+    color: #a6d60e;
+    border: 2px solid white;
+    padding: 30px 80px;
+    font-size: 80px;
+    border-radius: 100px;
+
+}
+
+.container1 {
+    width: 80%;
+    height: 50%;
+    background: url(../image/snake.jpg);
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    background-size: 100% 100%;
+    margin-left: 9%;
+    border: 9px solid rgb(1 216 40);
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    /* background-color: aqua; */
+}
+
+#end {
+    background: linear-gradient(#99f799, #f7f7bd);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+}
+
+.head {
+    background: url(../image/head.png);
+    background-size: 100% 100%;
+}
+
+.snake {
+    background: url(../image/snake.jpg);
+    background-size: 100% 100%;
+    border-radius: 60px;
+    margin: 20px;
+}
+
+.food {
+    background: url(../image/food.png);
+    background-size: cover;
+}
+
+.active {
+    display: none;
+}
+
+@keyframes color {
+    0%{background-color: red;}
+    5%{background-color: rgb(37, 37, 157);}
+    10%{background-color: rgb(17, 133, 119);}
+    15%{background-color: rgb(129, 199, 211);}
+    20%{background-color: blue;}
+    25%{background-color: rgba(22, 22, 168, 0.486);}
+    30%{background-color: rgb(141, 16, 87);}
+    35%{background-color: rgb(107, 101, 73);}
+    40%{background-color: blue;}
+    45%{background-color: rgb(76, 74, 59);}
+    50%{background-color: rgb(255, 162, 49);}
+    55%{background-color: rgb(77, 29, 89);}
+    60%{background-color: rgb(104, 180, 24);}
+    65%{background-color: rgb(231, 47, 41);}
+    70%{background-color: rgba(0, 122, 122, 0.684);}
+    75%{background-color: rgba(44, 44, 59, 0.282);}
+    80%{background-color: rgb(172, 81, 185);}
+    85%{background-color: rgb(121, 218, 218);}
+    90%{background-color: rgb(48, 255, 120);}
+    95%{background-color: rgb(184, 17, 213);}
+    100%{background-color: rgb(0, 255, 153);}
+}
+.snake1{
+    display: inline-block;
+    width: 87vw;
+    height: 500px;
+    transform: rotate(270deg);
+    position: absolute;
+    right: -1300px;
+}
+.snake2{
+    display: inline-block;
+    width: 87vw;
+    height: 500px;
+    transform: rotate(270deg);
+    position: absolute;
+    left: -1300px;
+}
+.snake3{
+    height: 500px;
+    width: 1000px;
+    background: url(../image/nagin.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.snake4{
+    height: 500px;
+    width: 1000px;
+    background: url(../image/nagin.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.homescreen{
+    width: 100vw;
+    height: 100vh;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake game hai apna</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="body bg">
+            <div class="homescreen">
+                <marquee class="snake1" behavior="scroll" scrollamount="50" direction="right">
+                    <div class="snake3 active"></div>
+                </marquee>
+                <div id="home" class="home">
+                    <div class="container1"></div>
+                    <div class="container2">
+                        <button id="playgame">Play Game</button>
+                    </div>
+                </div>
+                <marquee class="snake2" behavior="scroll" scrollamount="50" direction="right">
+                    <div class="snake4 active"></div>
+                </marquee>
+            </div>
+            <div class="gamescreen active">
+                <div id="board"></div>
+            </div>
+            <div id="end" class="gameoverscreen active">
+                <div class="containerend1">
+                    <div id="scoreBox">Score: 0</div>
+                </div>
+                <div class="containerend2">
+                    <div id="highscoreBox">High Score: 0</div>
+                </div>
+                <marquee scrollamount="30" behavior="alternate" class="containerend3"></marquee>
+                <div class="containerend4">
+                    <button id="exit">Exit</button>
+                    <button id="playagain">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/index.js"></script>
+<script src="js/event.js"></script>
+
+</html>
